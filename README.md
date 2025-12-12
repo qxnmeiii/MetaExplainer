@@ -1,8 +1,3 @@
-# MetaExplainer
-Based on the structure and style of the provided example, here is the documentation for **MetaExplainer** using the content from the uploaded PDF.
-
-***
-
 # MetaExplainer: Revisit Domain Generalization of Functional Connectome Analyses from The Perspective of Explainability
 
 ## 🔍 Description
@@ -17,13 +12,17 @@ The core premise of MetaExplainer is that **cross-domain generalizability** reli
 
 Evaluated on large-scale multi-center datasets (**ABIDE** for ASD and **REST-meta-MDD** for MDD), MetaExplainer achieves state-of-the-art performance (AUC: 76.32% for ASD, 65.31% for MDD) and identifies biomarkers consistent with clinical literature.
 
+
+We are pleased to announce that this work has been published in Medical Image Analysis (MedIA).
+
+🔗 Paper Link: https://doi.org/10.1016/j.media.2025.103664
 ---
 
 ## 🧭 Framework Overview
 
 The **MetaExplainer** pipeline consists of two fundamental components: an end-to-end fMRI-based GNN model for diagnosis and an explanatory-generalizability meta-learning algorithm for training.
 
-
+![framework of the MetaExplainer](model.png)
 ---
 
 ## 🗂 Step 1. Data Preparation
