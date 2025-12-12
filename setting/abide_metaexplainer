@@ -1,0 +1,32 @@
+
+model:
+  type: fbnetgen
+  extractor_type: cnn
+  embedding_size: 8
+  window_size: 4
+
+  cnn_pool_size: 16
+
+  graph_generation: linear
+
+  num_gru_layers: 4
+
+  dropout: 0.5
+
+
+
+train:
+  # normal or bilevel 
+  method: normal
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  epochs: 500
+  optimizer: adam
+
+  group_loss: true
+  sparsity_loss: true
+  sparsity_loss_weight: 1.0e-4
+  log_folder: result
+  
+
+  pure_gnn_graph: pearson
